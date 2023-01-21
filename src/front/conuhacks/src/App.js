@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './CSS/App.css';
 import './Components/Discord'
 import Discord from './Components/Discord';
@@ -6,9 +6,8 @@ import Entertainment from './Components/Entertainment';
 import MSTeams from './Components/MSTeams';
 import GoogleCalendar from './Components/Google Calendar';
 import Grid from '@mui/material/Grid';
-import Grid2 from '@mui/material/Unstable_Grid2';
 import Stack from '@mui/material/Stack';
-
+import Box from '@mui/material/Box'
 
 
 function App() {
