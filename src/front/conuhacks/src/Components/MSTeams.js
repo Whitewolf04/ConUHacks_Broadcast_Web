@@ -1,17 +1,23 @@
 import React from "react";
-import '../CSS/small.css';
+import Box from '@mui/material/Box';
 
 class MSTeams extends React.Component {
     render() {
         return (
-            <div className="container">
-                <div className="title">
-                    MSTeams
-                </div>
-                <div className="content">
-                    Content
-                </div>
-            </div>
+            <Box sx={{
+                border: 1,
+                borderColor: 'red',
+                borderRadius: '8px',
+                p: '5px',
+                width: '100 %',
+                height: '100 %'}}>
+                    <Box sx={{
+                        textAlign: "center"
+                    }}>MSTeams</Box>
+                    <Box sx={{
+                        textAlign: "center"
+                    }}>Content</Box>
+            </Box>
         )
     }
 }
