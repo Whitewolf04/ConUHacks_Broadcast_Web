@@ -1,13 +1,14 @@
 import React from "react";
-import '../CSS/small.css';
 
-class MSTeams extends React.Component {
+
+class Entertainment extends React.Component {
     render() {
-        return (
+        return(
             <div className="container">
                 <div className="title">
-                    MSTeams
+                    Meme of the day
                 </div>
+
                 <div className="content">
                     Content
                 </div>
@@ -16,4 +17,4 @@ class MSTeams extends React.Component {
     }
 }
 
-export default MSTeams;
+export default Entertainment;

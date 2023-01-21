@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+}

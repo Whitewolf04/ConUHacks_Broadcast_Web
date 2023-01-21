@@ -1,23 +1,33 @@
 import logo from './logo.svg';
-import './App.css';
+import './CSS/App.css';
+import './Components/Discord'
+import Discord from './Components/Discord';
+import Entertainment from './Components/Entertainment';
+import MSTeams from './Components/MSTeams';
+import Grid from '@mui/material/Grid';
+import Grid2 from '@mui/material/Unstable_Grid2';
+
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor: "Blue"}}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <Grid container spacing={2}>
+          <Grid xs={6}>
+            <MSTeams></MSTeams>
+          </Grid>
+          <Grid xs={6}>
+            <Grid container spacing={2}>
+              <Grid xs={6}>
+                <Discord></Discord>
+              </Grid>
+              <Grid xs={6}>
+                <Entertainment></Entertainment>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </div>
     </div>
   );
 }
