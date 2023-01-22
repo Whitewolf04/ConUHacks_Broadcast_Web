@@ -94,11 +94,9 @@ class Twitter extends React.Component {
         return (
             <Box sx={{
                 borderRadius: 3,
-                width: '100%',
-                height: '100%',
-                minHeight: {lg: 550},
                 backgroundColor: 'transparent',
                 color: 'white',
+                height: '100%',
                 }}
                 style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{textAlign: "center", fontWeight: 'bold', pt: 3}}>Twitter</Box>
