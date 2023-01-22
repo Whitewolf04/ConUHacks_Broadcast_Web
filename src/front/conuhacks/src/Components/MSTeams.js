@@ -54,16 +54,19 @@ class MSTeams extends React.Component {
             <Box sx={{
                 border: 1,
                 borderColor: 'red',
-                borderRadius: '8px',
-                p: '5px',
+                borderRadius: 3,
+                p: 2,
                 width: '100 %',
                 height: '100 %'}}>
                     <Box sx={{
                         textAlign: "center"
                     }}>MSTeams</Box>
-                    <Box sx={{
-                        textAlign: "center"
-                    }}>Content</Box>
+                    <Box>
+                        <GeneralAnnouncement/>
+                    </Box>
+                    <Box>
+                        <DepartmentAnnouncement/>
+                    </Box>
             </Box>
         )
     }

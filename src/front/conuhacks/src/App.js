@@ -12,11 +12,11 @@ import Box from '@mui/material/Box'
 
 function App() {
   return (
-    <div style={{border: '1px solid black'}}>
-      <div >
+    <Box>
+      <Box sx={{p: 2}}>
         <Grid container spacing={10}>
           <Grid item xs={6}>  {/* Grid Big Left (MSTeams) */}
-            <MSTeams></MSTeams>
+            <MSTeams/>
           </Grid>
           <Grid item xs={6}> {/* Grid Big Right */}
             <Stack spacing={2}>
@@ -32,8 +32,8 @@ function App() {
             </Stack>
           </Grid>
         </Grid>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
