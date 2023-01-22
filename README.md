@@ -2,7 +2,7 @@
 
 ## To install dependecies
 
-Run `npm install` in directory `src/front` and `src/back/conuhacks/src` (yeah, we know, oops)
+Run `npm install` in directory `src/front/conuhacks/src` (yeah, we know, oops) and `src/back`
 
 ## To start
 
