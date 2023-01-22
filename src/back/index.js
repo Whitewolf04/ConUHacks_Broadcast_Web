@@ -3,6 +3,7 @@ import sqlite3 from 'sqlite3';
 
 import client from './discord-impl.js';
 import config from './config.js';
+import calendarMock from '../../mock/calendar.js';
 import { fetchLatestTweet } from './twitter-impl.js';
 
 /** Discord  */
@@ -21,6 +22,7 @@ app.listen(5000, () => {
   console.log('Server is listening on port 5000...');
 })
 
+// Fetch all saved Discord announcements
 app.get('/api/getDiscord', async (req, res) => {
   let contents = [];
   db.each("SELECT content FROM message", (err, row) => {
@@ -30,7 +32,14 @@ app.get('/api/getDiscord', async (req, res) => {
   res.send(contents);
 })
 
+// Fetch the embeds for the 5 latest tweets 
 app.get('/api/getTwitter', async (req, res) => {
   const latestFive = await fetchLatestTweet();
   res.send(latestFive);
+})
+
+// Fetch the upcoming events from Google Calendar
+// @mocked
+app.get('/api/getCalendar', async (req, res) => {
+  res.send(calendarMock);
 })
