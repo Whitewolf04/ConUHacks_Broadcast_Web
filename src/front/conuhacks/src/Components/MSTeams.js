@@ -96,15 +96,13 @@ class MSTeams extends React.Component {
                 border: 1,
                 borderColor: 'white',
                 borderRadius: 3,
-                pt: 3,
-                pb: 3,
                 width: '100%',
                 height: '100%',
                 minHeight: {lg: 550},
                 backgroundColor: '#6264A7',
                 color: 'white',
                 }}>
-                    <Box sx={{textAlign: "center", fontWeight: 'bold'}}>Microsoft Teams</Box>
+                    <Box sx={{textAlign: "center", fontWeight: 'bold', pt: 3}}>Microsoft Teams</Box>
                     <Box>
                         <GeneralAnnouncement/>
                     </Box>

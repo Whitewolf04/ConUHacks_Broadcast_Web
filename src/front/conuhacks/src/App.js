@@ -36,17 +36,17 @@ function App() {
         </Box>
         <Box sx={{ p: 2 }}>
           <Grid container direction={'row'} justifyContent={'space-between'}>
-            <Grid item lg={6} style="{{color: black}}">
+            <Grid item lg={6}>
               {/* Grid Big Left (MSTeams) */}
               <MSTeams />
             </Grid>
             <Grid container direction={'column'} justifyContent={'space-between'} lg={6}>
-              <Grid container direction={'row'} justifyContent={'space-between'}>
-                <Grid item lg={6}>
+              <Grid container direction={'row'} justifyContent={'space-between'} height='fit-content'>
+                <Grid item lg={6} height='100%'>
                   {/* Grid Small Upper left (Discord) */}
                   <Discord></Discord>
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item lg={6} height='max-height'>
                   {/* Grid Small Upper Right (Entertainment) */}
                   <Entertainment></Entertainment>
                 </Grid>

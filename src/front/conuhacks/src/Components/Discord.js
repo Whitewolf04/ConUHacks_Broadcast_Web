@@ -19,8 +19,6 @@ class Discord extends React.Component {
                 border: 1,
                 borderColor: 'white',
                 borderRadius: 3,
-                pt: 3,
-                pb: 3,
                 width: '100 %',
                 height: '100 %',
                 bgcolor: '#5865F2',
@@ -29,6 +27,7 @@ class Discord extends React.Component {
                         textAlign: "center",
                         fontWeight: 'bold',
                         color: 'white',
+                        pt: 3,
                     }}>Discord</Box>
                     <Box sx={{pl: 2, pr: 2, pt: 2, pb: 1}}>
                         <ChatFeed/>
