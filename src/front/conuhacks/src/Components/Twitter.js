@@ -89,7 +89,7 @@ class TeamAnnouncement extends React.Component {
     }
 }
 
-class MSTeams extends React.Component {
+class Twitter extends React.Component {
     render() {
         return (
             <Box sx={{
@@ -101,7 +101,7 @@ class MSTeams extends React.Component {
                 color: 'white',
                 }}
                 style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
-                    <Box sx={{textAlign: "center", fontWeight: 'bold', pt: 3}}>Microsoft Teams</Box>
+                    <Box sx={{textAlign: "center", fontWeight: 'bold', pt: 3}}>Twitter</Box>
                     <Box>
                         <GeneralAnnouncement/>
                     </Box>
@@ -116,4 +116,4 @@ class MSTeams extends React.Component {
     }
 }
 
-export default MSTeams;
+export default Twitter;

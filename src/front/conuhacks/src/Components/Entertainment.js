@@ -23,7 +23,8 @@ class Entertainment extends React.Component {
                 width: '100%',
                 height: '100%',
                 backgroundColor: 'transparent',
-                color: 'white',}}
+                color: 'white',  
+            }}
                 style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{
                         textAlign: "center",

@@ -1,9 +1,10 @@
 import "./CSS/App.css";
 import Discord from "./Components/Discord";
 import Entertainment from "./Components/Entertainment";
-import MSTeams from "./Components/MSTeams";
+import Twitter from "./Components/Twitter";
 import GoogleCalendar from "./Components/Google Calendar";
 import Header from "./Header";
+import Sales from "./Components/Sales"
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
@@ -36,27 +37,36 @@ function App() {
           <Header />
         </Box>
         <Box sx={{ p: 2 }}>
-          <Grid container direction={'row'} justifyContent={'space-evenly'} columnSpacing={1}>
-            <Grid item lg={6} md={8} xs={12} height='fit-content' sx={{p:1}}>
+          <Grid container direction='row' justifyContent={'space-evenly'} columnSpacing={1}>
+            <Grid item lg={6} xs={12} height='fit-content' sx={{p:1}}>
               {/* Grid Big Left (MSTeams) */}
-              <MSTeams />
+              <Twitter />
             </Grid>
-            <Grid container direction={'column'} justifyContent={'space-between'} alignItems={'stretch'} lg={6} md={4} sx={{pl: 1, pr: 1}}>
-              <Grid container direction={'row'} justifyContent={'space-between'} height='fit-content'>
-                <Grid item lg={6} xs={12} sx={{p:1}}>
-                  {/* Grid Small Upper left (Discord) */}
-                  <Discord></Discord>
+            <Grid container direction='column' alignItems={'stretch'} justifyContent={'space-between'} lg={6} xs={12} sx={{pl: 1}}>
+                <Grid item sx={{p:1, pr: 0}}>
+                  <Sales/>
                 </Grid>
-                <Grid item lg={6} xs={12} sx={{p:1}}>
-                  {/* Grid Small Upper Right (Entertainment) */}
-                  <Entertainment></Entertainment>
+                <Grid container direction='row' justifyContent={'space-between'} height='85%'>
+                  <Grid item lg={6} xs={12} sx={{pl:1}} flexDirection='column' height='100%'>
+                    {/* Grid Small Upper left (Discord) */}
+                    <Discord></Discord>
+                  </Grid>
+                  <Grid container direction='column' justifyContent='space-between' alignItems='stretch' lg={6} sx={{pb: 0.5}}>
+                    <Grid item  sx={{pl: 3}}>
+                      {/* Grid Small Upper Right (Entertainment) */}
+                      <Entertainment></Entertainment>
+                    </Grid>
+                    <Grid item sx={{pl: 3}}>
+                      {/* Grid Small Upper Right (Entertainment) */}
+                      <Entertainment></Entertainment>
+                    </Grid>
+                  </Grid>
                 </Grid>
-              </Grid>
-              <Grid item xs={12} md={6} sx={{p:1}}>
-                <GoogleCalendar></GoogleCalendar>
-              </Grid>
             </Grid>
           </Grid>
+          <Box sx={{mt: 2}}>
+            <GoogleCalendar/>
+          </Box>
         </Box>
       </Box>
     </Box>
