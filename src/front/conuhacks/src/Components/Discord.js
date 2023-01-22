@@ -1,13 +1,33 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import axios from "axios";
+import { Typography } from "@mui/material";
 
 class ChatFeed extends React.Component {
-  render() {
+  state = {feed: []};
+
+  componentDidMount() {
+    this.fetchDiscord();
+    this.interval = setInterval(this.fetchDiscord, 10000);
+  }
+
+  render() {    
     return (
-      <Box sx={{ p: 1, color: "white", bgcolor: "#2C2F33", borderRadius: 0.9 }}>
-        Content
-      </Box>
+      this.state.feed.map(content => {
+        return <Box sx={{ p: 1, color: "white", bgcolor: "#2C2F33", borderRadius: 0.9 }}>
+          <Typography sx={{fontStyle: 'italic', fontSize: '50%'}}>#announcements</Typography>
+          <Typography sx={{fontSize: '90%'}}>{content}</Typography>
+        </Box>
+      })
     );
+  }
+
+  fetchDiscord = () => {
+    axios.get('http://localhost:5000/api/getDiscord')
+      .then(res => {
+        const feed = res.data;
+        this.setState({ feed });
+      })
   }
 }
 
