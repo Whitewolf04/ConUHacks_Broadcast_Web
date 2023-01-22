@@ -3,7 +3,7 @@ import Discord from "./Components/Discord";
 import Entertainment from "./Components/Entertainment";
 import Twitter from "./Components/Twitter";
 import GoogleCalendar from "./Components/Google Calendar";
-import Weather from "./Components/Weather"
+import WeatherWidget from "./Components/Weather"
 import Header from "./Header";
 import Sales from "./Components/Sales"
 import Grid from "@mui/material/Grid";
@@ -55,7 +55,7 @@ function App() {
                   <Grid container direction='column' justifyContent='space-between' lg={6}>
                     <Grid item sx={{pl: 3, pb: 1}}>
                       {/* Grid Small Upper Right (Entertainment) */}
-                      <Weather/>
+                      <WeatherWidget/>
                     </Grid>
                     <Grid item sx={{pl: 3, pt: 1}}>
                       {/* Grid Small Upper Right (Entertainment) */}
