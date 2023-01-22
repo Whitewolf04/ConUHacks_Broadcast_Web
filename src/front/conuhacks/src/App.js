@@ -13,11 +13,11 @@ import backgroundPic from "./main_background.webp";
 
 const background = {
   backgroundContainer: {
-    height: 800,
-    // backgroundImage: `url(${backgroundPic})`,
     backgroundColor: '#0093E9',
     backgroundImage: `linear-gradient(160deg, #0093E9 30%, #80D0C7 70%)`,
     backgroundSize: `cover`,
+    overflow: `auto`,
+    height: `auto`,
   },
 
   backgroundBlur: {
@@ -43,21 +43,21 @@ function App() {
               {/* Grid Big Left (MSTeams) */}
               <Twitter />
             </Grid>
-            <Grid container direction='column' justifyContent={'space-between'} lg={6} xs={12} sx={{pl: 1}}>
-                <Grid item sx={{p:1, pr: 0}}>
+            <Grid container direction='column' lg={6} xs={12} sx={{pl: 1}}>
+                <Grid item sx={{p:1, pr: 0}} height='12%'>
                   <Sales/>
                 </Grid>
-                <Grid container direction='row' justifyContent={'space-between'}>
-                  <Grid item lg={6} xs={12} sx={{pl:1}} flexDirection='column' height='100%'>
+                <Grid container direction='row' height='88%'>
+                  <Grid item lg={6} xs={12} sx={{p:1, pt: 0}} flexDirection='column' height='100%'>
                     {/* Grid Small Upper left (Discord) */}
                     <Discord></Discord>
                   </Grid>
-                  <Grid container direction='column' justifyContent='space-between' lg={6}>
-                    <Grid item sx={{pl: 3, pb: 1}}>
+                  <Grid container direction='column' justifyContent='space-between' lg={6} sx={{pb: 1}}>
+                    <Grid item sx={{pl: 3, pb: 1}} height='30%'>
                       {/* Grid Small Upper Right (Entertainment) */}
                       <WeatherWidget/>
                     </Grid>
-                    <Grid item sx={{pl: 3, pt: 1}}>
+                    <Grid item sx={{pl: 3, pt: 1}} height='70%'>
                       {/* Grid Small Upper Right (Entertainment) */}
                       <Entertainment></Entertainment>
                     </Grid>

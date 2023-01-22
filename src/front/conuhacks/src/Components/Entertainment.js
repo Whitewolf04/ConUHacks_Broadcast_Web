@@ -22,6 +22,7 @@ class Entertainment extends React.Component {
                 borderRadius: 3,
                 backgroundColor: 'transparent',
                 color: 'white',  
+                height: '100%'
             }}
                 style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{

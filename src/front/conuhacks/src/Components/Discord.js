@@ -23,7 +23,7 @@ class ChatFeed extends React.Component {
   }
 
   fetchDiscord = () => {
-    axios.get('http://localhost:5000/api/getDiscord')
+    axios.get('http://localhost:8080/api/getDiscord')
       .then(res => {
         const feed = res.data;
         this.setState({ feed });
