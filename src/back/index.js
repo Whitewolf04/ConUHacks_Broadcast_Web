@@ -3,10 +3,17 @@ import sqlite3 from 'sqlite3';
 
 import client from './discord-impl.js';
 import config from './config.js';
+import { fetchLatestTweet } from './twitter-impl.js';
+
+/** Discord  */
 
 client.login(config.DISCORD_TOKEN).then();
 
+/** SQLite */
+
 const db = new sqlite3.Database('./db/message.db');
+
+/** Express App -- Main */
 
 const app = express();
 
@@ -21,4 +28,9 @@ app.get('/api/getDiscord', async (req, res) => {
   })
   await new Promise(r => setTimeout(r, 100)); // IT HAS TO STAY
   res.send(contents);
+})
+
+app.get('/api/getTwitter', async (req, res) => {
+  const latestFive = await fetchLatestTweet();
+  res.send(latestFive);
 })
