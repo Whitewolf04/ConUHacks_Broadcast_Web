@@ -20,8 +20,6 @@ class Entertainment extends React.Component {
         return(
             <Box sx={{
                 borderRadius: 3,
-                width: '100%',
-                height: '100%',
                 backgroundColor: 'transparent',
                 color: 'white',  
             }}
@@ -40,7 +38,7 @@ class Entertainment extends React.Component {
                     }}>
                         {memes.map((meme) => {
                             return <Paper>
-                                <img src={meme.src} alt="meme" style={{maxHeight: "300px"}}></img>
+                                <img src={meme.src} alt="meme" style={{maxHeight: "250px"}}></img>
                             </Paper>
                         })}
                     </Carousel>
