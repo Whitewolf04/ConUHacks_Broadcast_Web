@@ -39,6 +39,8 @@ class Discord extends React.Component {
           borderRadius: 3,
           bgcolor: "transparent",
           height: '100%',
+          pl: 3,
+          pr: 3,
         }}
         style={{ backgroundColor: "rgba(0, 0, 0, 0.3)"}}
       >
@@ -48,11 +50,13 @@ class Discord extends React.Component {
             fontWeight: "bold",
             color: "white",
             pt: 3,
+            pb: 2,
           }}
         >
           Discord
         </Box>
-        <Box sx={{ pl: 2, pr: 2, pt: 2, pb: 1 }}>
+        <Box sx={{ pl: 2, pr: 2, pt: 2, pb: 1, borderRadius: 1.5}}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)"}}>
           <ChatFeed />
         </Box>
       </Box>

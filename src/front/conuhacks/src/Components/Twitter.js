@@ -1,15 +1,15 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import {TwitterTimelineEmbed} from "react-twitter-embed";
+import TwitterTimelineEmbed from "./TwitterTimelineEmbed";
 
 class Twitter extends React.Component {
   render() {
     return (
-      <Box>
+      <Box height='100%'>
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="FabrizioRomano"
-          options={{height: 550}}
+          tweetLimit={1}
         />
       </Box>
     );
