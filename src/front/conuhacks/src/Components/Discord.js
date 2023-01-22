@@ -17,7 +17,7 @@ class Discord extends React.Component {
         return (
             <Box sx={{
                 border: 1,
-                borderColor: 'white',
+                borderColor: '#5865F2',
                 borderRadius: 3,
                 width: '100 %',
                 height: '100 %',

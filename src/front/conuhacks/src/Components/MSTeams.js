@@ -94,7 +94,7 @@ class MSTeams extends React.Component {
         return (
             <Box sx={{
                 border: 1,
-                borderColor: 'white',
+                borderColor: '#6264A7',
                 borderRadius: 3,
                 width: '100%',
                 height: '100%',
