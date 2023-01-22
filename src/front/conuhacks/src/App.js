@@ -5,7 +5,6 @@ import MSTeams from "./Components/MSTeams";
 import GoogleCalendar from "./Components/Google Calendar";
 import Header from "./Header";
 import Grid from "@mui/material/Grid";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
 import backgroundPic from "./main_background.webp";
