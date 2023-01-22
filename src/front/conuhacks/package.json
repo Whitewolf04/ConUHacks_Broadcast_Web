@@ -16,6 +16,7 @@
     "react-material-ui-carousel": "^3.4.2",
     "react-scripts": "^5.0.1",
     "semantic-ui-react": "^2.1.4",
+    "react-twitter-embed": "^4.0.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

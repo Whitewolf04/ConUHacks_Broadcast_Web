@@ -17,7 +17,7 @@ const background = {
     backgroundImage: `linear-gradient(160deg, #0093E9 30%, #80D0C7 70%)`,
     backgroundSize: `cover`,
     overflow: `auto`,
-    height: `auto`,
+    height: `auto`
   },
 
   backgroundBlur: {
