@@ -13,14 +13,16 @@ import backgroundPic from "./main_background.webp";
 const background = {
   backgroundContainer: {
     height: 800,
-    backgroundImage: `url(${backgroundPic})`,
+    // backgroundImage: `url(${backgroundPic})`,
+    backgroundColor: '#0093E9',
+    backgroundImage: `linear-gradient(160deg, #0093E9 30%, #80D0C7 70%)`,
     backgroundSize: `cover`,
   },
 
   backgroundBlur: {
     height: "100%",
     width: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.05)",
+    backgroundColor: "rgba(0, 0, 0, 0.15)",
   },
 };
 

@@ -16,13 +16,12 @@ class Discord extends React.Component {
     render() {
         return (
             <Box sx={{
-                border: 1,
-                borderColor: '#5865F2',
                 borderRadius: 3,
                 width: '100 %',
                 height: '100 %',
-                bgcolor: '#5865F2',
-                minHeight: {lg: 225}}}>
+                bgcolor: 'transparent',
+                minHeight: {lg: 225}}}
+                style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{
                         textAlign: "center",
                         fontWeight: 'bold',

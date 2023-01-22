@@ -14,11 +14,11 @@ class GeneralAnnouncement extends React.Component {
             <Box>
                 <List sx={{
                         width: '100%',
-                        bgcolor: '#6264A7',
+                        bgcolor: 'transparent',
                         position: 'relative',
                         overflow: 'auto',
                     }}>
-                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: '#6264A7'}}>General Announcement</ListSubheader>
+                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: 'transparent'}}>General Announcement</ListSubheader>
                     <ListItem sx={{mt: -1}}>
                         <Grid container spacing={0}>
                             <Grid item xs={12} md={10} sx={{border: 2, borderRadius: 2, pl: 2}}>
@@ -41,11 +41,11 @@ class DepartmentAnnouncement extends React.Component {
             <Box>
                 <List sx={{
                         width: '100%',
-                        bgcolor: '#6264A7',
+                        bgcolor: 'transparent',
                         position: 'relative',
                         overflow: 'auto',
                     }}>
-                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: '#6264A7'}}>Department Announcement</ListSubheader>
+                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: 'transparent'}}>Department Announcement</ListSubheader>
                     <ListItem sx={{mt: -1}}>
                         <Grid container spacing={0}>
                             <Grid item xs={12} md={10} sx={{border:2, borderRadius:2, pl: 2}}>
@@ -68,11 +68,11 @@ class TeamAnnouncement extends React.Component {
             <Box>
                 <List sx={{
                         width: '100%',
-                        bgcolor: '#6264A7',
+                        bgcolor: 'transparent',
                         position: 'relative',
                         overflow: 'auto',
                     }}>
-                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: '#6264A7'}}>Team Announcement</ListSubheader>
+                    <ListSubheader sx={{textAlign: 'left', pl: 3, bgcolor: 'transparent'}}>Team Announcement</ListSubheader>
                     <ListItem sx={{mt: -1}}>
                         <Grid container spacing={0}>
                             <Grid item xs={12} md={10} sx={{border:2, borderRadius:2, pl: 2}}>
@@ -93,15 +93,14 @@ class MSTeams extends React.Component {
     render() {
         return (
             <Box sx={{
-                border: 1,
-                borderColor: '#6264A7',
                 borderRadius: 3,
                 width: '100%',
                 height: '100%',
                 minHeight: {lg: 550},
-                backgroundColor: '#6264A7',
+                backgroundColor: 'transparent',
                 color: 'white',
-                }}>
+                }}
+                style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{textAlign: "center", fontWeight: 'bold', pt: 3}}>Microsoft Teams</Box>
                     <Box>
                         <GeneralAnnouncement/>

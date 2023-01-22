@@ -6,12 +6,12 @@ class GoogleCalendar extends React.Component {
     render() {
         return(
             <Box sx={{
-                border: 1,
-                borderColor: 'red',
-                borderRadius: '8px',
+                borderRadius: 3,
                 p: '5px',
                 width: '100 %',
-                height: '100 %'}}>
+                height: '100 %',
+                color: "white",}}
+                style={{backgroundColor: 'rgba(0, 0, 0, 0.3)'}}>
                     <Box sx={{
                         textAlign: "center"
                     }}>Google Calendar</Box>
